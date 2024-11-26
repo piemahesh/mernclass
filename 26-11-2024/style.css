@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.p-c {
+  background: #4071f4;
+}
+
+.imgContainer {
+  height: 450px;
+  width: 450px;
+  overflow: hidden;
+  background-color: aqua;
+  display: inline-block;
+}
+.imgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  height: 500px;
+  width: 400px;
+  background-color: #cfd0d1;
+  border-radius: 10px;
+  margin: 50px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.topsec {
+  height: 150px;
+  position: relative;
+}
+
+.outc {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 33%;
+  top: 40%;
+  box-shadow: 2px 2px 15px #ffffffb5;
+}
+
+.inc {
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  top: 3.5px;
+  left: 3.5px;
+  div {
+    height: 98%;
+    width: 98%;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
