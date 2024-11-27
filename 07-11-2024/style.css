@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.box {
+  height: 300px;
+  width: 500px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50%; */
+  box-shadow: 5px -5px 10px white inset, 5px 5px 10px inset yellow;
+  /* background: green, white, red; */
+  /* background: #008000 #ffffff, #ff0000; */
+  /* background: hsl(120, 100%, 25%), hsl(0, 0%, 100%), hsl(0, 100%, 50%); */
+  /* background: hwb(120 0% 50%), hwb(0 100% 0%), hwb(0 0% 0%); */
+  /* background: rgb(0, 128, 0), rgb(255, 255, 255), rgb(255, 0, 0); */
+  background: linear-gradient(
+    to right,
+    red 0% 15%,
+    white 25% 55%,
+    blue 58% 100%
+  );
+
+  /* background: conic-gradient(white 0% 65%, lightgrey 65% 120%); */
+  /* background: radial-gradient(green 0% 25%, blue 10% 45%, orange 45% 100%); */
+  /* rotate: 50deg; */
+  .round {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: lightblue;
+  }
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  /* background-color: lightblue; */
+  /* background-image: url("./bg.png"); */
+  background-image: url("./image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .content {
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+section {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 20px;
+}
+
+.layer {
+  background-color: #2626266e;
+  height: 100%;
+  width: 100%;
+}

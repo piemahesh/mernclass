@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 80%;
+  background-color: lightblue;
+}
+
+.text-demo {
+  width: 80%;
+  border: 2px solid blue;
+  color: red;
+  /* background-color: black; */
+  font-size: small;
+  font-weight: normal;
+  /* line-height: 25px; */
+  /* letter-spacing: 10px;*/
+  /* word-spacing: 20px; */
+  /* text-indent: 50px; */
+  /* text-align: justify; */
+  /* text-decoration: line-through; */
+  /* text-shadow: 2px 20px 10px yellow; */
+  text-transform: lowercase;
+  overflow: hidden;
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  span {
+    background-color: yellow;
+    color: green;
+  }
+}
