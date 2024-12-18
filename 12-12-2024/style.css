@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent {
+  height: 100vh;
+  background-image: url("./bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  /* background-position: bottom; */
+}
+
+.car {
+  position: absolute;
+  bottom: 180px;
+  animation: infinite moving_car 1s linear;
+  .top {
+    height: 150px;
+    width: 250px;
+    background-color: red;
+    border-top-right-radius: 200px;
+  }
+  .tire {
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: grey;
+    animation: tire_ani 500ms linear infinite;
+  }
+  .t1 {
+    right: 25px;
+  }
+}
+
+@keyframes moving_car {
+  0% {
+    bottom: 180px;
+    left: 0;
+  }
+  100% {
+    bottom: 180px;
+    left: 83%;
+  }
+}
+
+@keyframes tire_ani {
+  0% {
+    height: 80px;
+  }
+  100% {
+    height: 70px;
+    box-shadow: 1px 1px 3px white;
+  }
+}
+
+.light {
+  height: 500px;
+  width: 50px;
+  position: absolute;
+  bottom: 320px;
+  background-color: gray;
+  left: 70%;
+
+  .bulb {
+    height: 80px;
+    width: 50px;
+    border-radius: 10px;
+    animation: linear light_moving infinite 1s;
+  }
+}
+
+@keyframes light_moving {
+  0% {
+    background-color: #ffff0080;
+    box-shadow: 10px 10px 400px yellowgreen;
+  }
+  100% {
+    background-color: yellow;
+    box-shadow: 10px 10px 40px yellowgreen;
+  }
+}

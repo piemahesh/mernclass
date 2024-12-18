@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  background-color: ghostwhite;
+
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  /* display: inline-block; */
+  display: flex;
+  gap: 10px 5px;
+  /* row-gap: 12px;
+  column-gap: 15px; */
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* justify-content: flex-end; */
+  /* flex-direction: column-reverse; */
+  /* justify-content: space-between; */
+}
+
+.sBox {
+  height: 150px;
+  background-color: #ffff0079;
+  border: 1px solid rgb(91, 53, 53);
+  display: flex;
+  font-size: 32px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.box > :nth-child(1) {
+  flex-basis: 450px;
+  flex-shrink: 2;
+}
+.box > :nth-child(2) {
+  flex-basis: 300px;
+}
+.box > :nth-child(3) {
+  flex-basis: 500px;
+  flex-shrink: 3;
+  order: 2;
+}
+.box > :nth-child(4) {
+  flex-basis: 350px;
+  flex-shrink: 2;
+}
+.box > :nth-child(5) {
+  flex-basis: 140px;
+  flex-grow: 1;
+  max-width: 90%;
+  order: -1;
+}

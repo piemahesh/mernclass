@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 15px;
+  color: blue;
+}
+
+.box {
+  height: 300px;
+  width: 500px;
+  background-color: blue;
+}
+
+.box2 {
+  height: 500px;
+  width: 200px;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.parent {
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 2em;
+  /* // 20px */
+  p {
+    font-size: 2em;
+    /* 40px */
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .parent {
+    font-size: 1.5em;
+  }
+} */
+
+/* .heading {
+  font-size: clamp(2rem, 3vw, 4em);
+  font-weight: bold;
+  text-transform: uppercase; */
+/* } */
+
+.box {
+  height: 100px;
+  width: clamp(300px, 50%, 600px);
+  background-color: #33998d;
+}
+
+.parentBox {
+  width: 100vw;
+  height: 400px;
+  /* background-color: yellow; */
+}
+
+.customBox {
+  width: clamp(1000px, 70%, 1200px);
+  height: 350px;
+  background-color: orange;
+}

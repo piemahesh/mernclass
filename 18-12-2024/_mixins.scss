@@ -1,0 +1,7 @@
+//  it is a keyword to create an function
+// interpolation #{}
+@mixin createBox($height, $width, $bg-color) {
+  height: $height;
+  width: $width;
+  background-color: $bg-color;
+}

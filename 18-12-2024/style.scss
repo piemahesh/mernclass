@@ -1,0 +1,22 @@
+@import "./variable";
+@import "./mixins";
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+p {
+  font-size: $font-size;
+  color: $pri-col;
+}
+
+.box {
+  @include createBox(300px, 500px, blue);
+}
+
+.box2 {
+  @include createBox(500px, 200px, red);
+}
+

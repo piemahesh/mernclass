@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  background-color: red;
+}
+
+.about {
+  height: 600px;
+  width: 600px;
+  background-color: gray;
+}
+
+.contact {
+  background-color: green;
+}
+
+.form {
+  height: 600px;
+}/*# sourceMappingURL=style.css.map */
