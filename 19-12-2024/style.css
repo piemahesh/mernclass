@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box, .mainBox {
+  height: 500px;
+  width: 200px;
+  background-color: green;
+  padding: 24px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.box1 {
+  height: 300px;
+  width: 400px;
+  background-color: transparent;
+  padding: 24px;
+  border-radius: 0;
+  margin: 0px;
+}
+
+.mainBox {
+  background-color: yellow;
+}
+
+.mainBox {
+  height: 50px;
+  width: 100px;
+}
+
+.box1, #bg {
+  height: 600px;
+  width: 600px;
+  background-color: grey;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px;
+}
+
+.box, .mainBox {
+  box-shadow: 10px 10px 1px green;
+}
+
+.te {
+  text-align: center;
+}
+
+.box-200 {
+  box-shadow: 10px 10px 200px green;
+  height: 200px;
+  margin: 10px;
+  width: 200px;
+  background-color: red;
+}
+
+.box-100 {
+  box-shadow: 10px 10px 100px green;
+  height: 100px;
+  margin: 10px;
+  width: 100px;
+  background-color: red;
+}
+
+.box-200 {
+  box-shadow: 10px 10px 200px green;
+  height: 200px;
+  margin: 10px;
+  width: 200px;
+  background-color: red;
+}
+
+.box-300 {
+  box-shadow: 10px 10px 300px green;
+  height: 300px;
+  margin: 10px;
+  width: 300px;
+  background-color: red;
+}
+
+.box-400 {
+  box-shadow: 10px 10px 400px green;
+  height: 400px;
+  margin: 10px;
+  width: 400px;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

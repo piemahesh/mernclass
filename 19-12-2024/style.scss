@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin createBox(
+  $height,
+  $width,
+  $bgCol,
+  $radius: 0px,
+  $pad: 0px,
+  $margin: 0px
+) {
+  height: $height;
+  width: $width;
+  background-color: $bgCol;
+  padding: $pad;
+  border-radius: $radius;
+  margin: $margin;
+}
+
+.box {
+  @include createBox(500px, 200px, green, 10px, 24px, 20px);
+}
+
+.box1 {
+  @include createBox(300px, 400px, transparent, 0, 24px);
+}
+
+.mainBox {
+  @extend .box;
+  background-color: yellow;
+}
+
+@mixin createDyBox($arg) {
+  height: $arg;
+  width: $arg * 2;
+}
+
+.mainBox {
+  @include createDyBox(50px);
+}
+
+%boxFunc {
+  height: 600px;
+  width: 600px;
+  background-color: grey;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px;
+}
+
+#bg {
+  @extend %boxFunc;
+}
+
+.box1 {
+  @extend %boxFunc;
+}
+
+@mixin createDiv($blur: 1px) {
+  box-shadow: 10px 10px $blur green;
+}
+
+.box {
+  @include createDiv();
+}
+
+.te {
+  text-align: center;
+}
+
+@mixin createClass($size: 200) {
+  .box-#{$size} {
+    @include createDiv($size + px);
+    height: #{$size}px;
+    margin: 10px;
+    width: $size + px;
+    background-color: red;
+  }
+}
+
+@include createClass();
+
+@include createClass(100);
+@include createClass(200);
+@include createClass(300);
+@include createClass(400);
